@@ -5,12 +5,10 @@ ANDROID_VERSION_MINOR := $(word 2, $(subst ., , $(PLATFORM_VERSION)))
 ANDROID_VERSION_PATCH := $(word 3, $(subst ., , $(PLATFORM_VERSION)))
 
 ifeq ($(strip $(ANDROID_VERSION_MINOR)),)
-$(warning *** ANDROID_VERSION_MINOR undefined. Assuming 0)
 ANDROID_VERSION_MINOR = 0
 endif
 
 ifeq ($(strip $(ANDROID_VERSION_MICRO)),)
-$(warning *** ANDROID_VERSION_MICRO undefined. Assuming 0)
 ANDROID_VERSION_MICRO = 0
 endif
 
