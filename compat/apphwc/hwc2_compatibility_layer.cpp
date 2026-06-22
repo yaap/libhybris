@@ -199,7 +199,7 @@ hwc2_error_t hwc2_compat_display_present(hwc2_compat_display_t* display,
     ndk::ScopedFileDescriptor out_fence;
     display->device->self->present(display->id, &out_fence);
 
-    *outPresentFence = out_fence.get();
+    *outPresentFence = out_fence.release();
 
     return HWC2_ERROR_NONE;
 }
