@@ -38,8 +38,6 @@ LOCAL_SHARED_LIBRARIES := \
     android.hardware.graphics.composer@2.2 \
     android.hardware.graphics.composer@2.3 \
     android.hardware.graphics.composer@2.4 \
-    android.hardware.configstore@1.0 \
-    android.hardware.configstore-utils \
     libcutils \
     liblog \
     libfmq \
